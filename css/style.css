@@ -2,8 +2,24 @@
     --bs-gutter-x: 30px;
 }
 header {
-    height: 715px;
+    /* height: 715px; */
     background-color: #FFF9F4;
+    padding-bottom: 120px;
+}
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.menu-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3C3C3C !important;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+.menu-item:hover {
+    opacity: 0.8;
 }
 .orange-highliter {
     color: #FA804C;
@@ -56,6 +72,7 @@ header {
     padding: 18px;
     border: none;
     border-radius: 20px;
+    margin-bottom: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .img-box, .img-box-2 {
@@ -71,7 +88,7 @@ header {
     font-size: 24px;
     line-height: 24px;
     color: #363958;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .card-text {
     font-family: 'Roboto', sans-serif;
@@ -81,6 +98,9 @@ header {
     color: #3E3E3E;
     margin-bottom: 15px;
 }
+.card-price {
+    margin-bottom: 10px;
+}
 .price {
     
     font-family: 'Roboto', sans-serif;
@@ -88,4 +108,35 @@ header {
     line-height: auto;
     font-weight: 900;
     color: #FA804C;
+}
+
+.shop-info {
+    padding: 60px 0 150px;
+}
+.info-list {
+    padding-right: 150px;
+}
+.info-card {
+    padding: 25px 70px 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.info-img {
+    width: 78px;
+    margin-right: 35px;
+}
+.info-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #363958;
+}
+.info-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #3E3E3E;
+    margin: 0;
+
 }
