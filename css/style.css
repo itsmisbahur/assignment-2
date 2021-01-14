@@ -2,9 +2,17 @@
     --bs-gutter-x: 30px;
 }
 header {
-    /* height: 715px; */
+    position: relative;
     background-color: #FFF9F4;
     padding-bottom: 120px;
+    overflow: hidden;
+}
+header::before {
+    content: url(../img/header-bg-txt.png);
+    position: absolute;
+    left: 40%;
+    top: 0;
+    transform: translateY(-50%);
 }
 .brand-logo {
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +25,8 @@ header {
     color: #3C3C3C !important;
     opacity: 1;
     transition: opacity 0.4s ease;
+    padding: 0 !important;
+    margin-left: 50px;
 }
 .menu-item:hover {
     opacity: 0.8;
@@ -38,6 +48,13 @@ header {
     font-family: 'Bebas Neue', cursive;
     font-size: 80px;
     line-height: 80px;
+}
+.head-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #3E3E3E;
+    margin-bottom: 20px;
 }
 .btn-custom {
     color: white;
@@ -176,53 +193,8 @@ header {
 }
 
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.99px) {
-    .header-section {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .navbar {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .header-content {
-        padding: 50px 20% 30px 15px;
-    }
-    .header-img {
-        padding: 20px;
-    }
-    .head-title {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 60px;
-        line-height: 60px;
-    }
-}
-
  /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .header-section {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .navbar {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .header-content {
-        padding: 50px 20% 30px 15px;
-    }
-    .header-img {
-        padding: 20px;
-    }
-    .head-title {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 60px;
-        line-height: 60px;
-    }
-    .shop-info > .container > .row {
-        flex-direction: column-reverse;
-    }
     .footer-brand-info {
         text-align: center;
     }
@@ -264,12 +236,19 @@ header {
     .shop-info .info-big-img {
         margin-bottom: 50px;
     }
+    .menu-item {
+        margin: 10px 0;        
+    }
+    
  }
 
  /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
     .header-content {
         padding: 50px 15px 30px 15px;
+    }
+    .btn-custom {
+        padding: 18px 25px 15px;
     }
  }
 
